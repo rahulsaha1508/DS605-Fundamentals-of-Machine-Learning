@@ -1,4 +1,3 @@
-readme_content = r"""
 # DS605 Lab 06: Feature Extraction and Machine Learning with Image and Text Data
 
 ## Overview
