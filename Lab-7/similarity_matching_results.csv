@@ -1,0 +1,5 @@
+representation,distance,dims,match_time_ms,accuracy_pct
+Raw pixels (10304 dims),euclidean,10304,1017.0,96.25
+Raw pixels (10304 dims),cosine,10304,727.31,96.25
+PCA K=100 (>=90% var),euclidean,100,0.68,96.25
+PCA K=100 (>=90% var),cosine,100,0.75,96.25

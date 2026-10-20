@@ -1,0 +1,11 @@
+Model,Setting,k,whiten,params,CV acc (%),Test acc (%)
+"1-NN Euclidean, raw pixels",baseline,10304,-,{},,96.25
+"1-NN Euclidean, PCA K90",baseline,100,False,{},,96.25
+KNN,best CV,150,False,"{'n_neighbors': 1, 'weights': 'uniform'}",95.0,96.25
+Logistic Regression,best CV,150,False,{'C': 10},98.44,97.5
+SVM (linear),best CV,60,True,{'C': 0.1},97.81,96.25
+SVM (RBF),best CV,60,True,"{'C': 1, 'gamma': 'scale'}",97.5,96.25
+KNN,compact (<=1pt below best CV),20,False,"{'n_neighbors': 1, 'weights': 'uniform'}",94.06,96.25
+Logistic Regression,compact (<=1pt below best CV),30,False,{'C': 0.1},97.5,97.5
+SVM (linear),compact (<=1pt below best CV),30,False,{'C': 0.1},96.88,97.5
+SVM (RBF),compact (<=1pt below best CV),30,False,"{'C': 10, 'gamma': 'scale'}",96.88,97.5
